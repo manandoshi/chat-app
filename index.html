@@ -1,0 +1,37 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat App</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
+  <body>
+    <div class="row">
+        <div class="large-6 large-offset-3 medium-8 medium-offset-2 small-10 small-offset-1 column">    
+            <label>Login ID
+                <input id="login" type="text" placeholder="Enter login ID">
+            </label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="large-6 large-offset-3 medium-8 medium-offset-2 small-10 small-offset-1 column">
+            <label>Password
+                <input id="pass" type="password" aria-describedby="passwordHelpText">
+            </label>
+            <p class="help-text" id="passwordHelpText">The password will be stored in <em>Plain text</em>(until I learn how to use authentication modules). Please do not reuse passwords.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="large-offset-3 large-2 small-offset-1 small-11"><button class="button" onclick="submit()"></button></div>
+    </div>
+    <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/what-input.min.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
